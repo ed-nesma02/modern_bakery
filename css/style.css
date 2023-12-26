@@ -1,0 +1,374 @@
+/* poppins-300 - latin */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --swiper-theme-color: #73835A;
+  --swiper-pagination-bullet-inactive-color:#A18268;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #31261a;
+  background-color: #faf4ea;
+  line-height: 1;
+  font-size: 18px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+.green {
+  color: #819b57;
+}
+.green_600 {
+  font-weight: 600;
+}
+.green_black {
+  color: #465929;
+}
+
+.container {
+  --width: 1190px;
+  --padding: 30px;
+  max-width: calc(var(--width) + var(--padding) * 2);
+  padding: 0 var(--padding);
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 114px;
+  text-transform: uppercase;
+  color: #faf4ea;
+  font-size: 24px;
+  font-family: "Poppins";
+  -webkit-text-stroke: 0.5px #000000;
+}
+.logo__span {
+  font-weight: 700;
+}
+
+.nav {
+  color: #faf4ea;
+}
+.nav__items {
+  display: flex;
+  gap: 64px;
+}
+.nav__link {
+  color: #faf4ea;
+}
+.nav__link:hover {
+  color: #819b57;
+}
+
+.header {
+  position: absolute;
+  padding-top: 32px;
+  left: 0;
+  right: 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__btn {
+  font-weight: 600;
+  color: #faf4ea;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid #819b57;
+  background-color: #819b57;
+}
+.header__btn:hover {
+  background-color: #faf4ea;
+  color: #465929;
+}
+
+.hero {
+  right: 0;
+  height: 0;
+  background-image: url(../img/main_page.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hero__title {
+  text-align: center;
+  font-size: 128px;
+  font-weight: 700;
+  color: #faf4ea;
+}
+
+.info-line {
+  padding: 16px 0;
+  background-color: #819b57;
+}
+.info-line__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-line__item {
+  color: #faf4ea;
+}
+
+.new-format {
+  padding: 96px 0 48px;
+}
+.new-format__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.new-format__text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  line-height: 1.2;
+}
+.new-format__title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+}
+
+.line {
+  display: block;
+  margin-bottom: 23px;
+  height: 2px;
+  width: 352px;
+  background: #cfcfbc;
+}
+
+.best-cook {
+  padding: 46px 0 66px;
+}
+.best-cook__wrapper-title {
+  display: flex;
+  align-items: end;
+  padding-bottom: 40px;
+}
+.best-cook__title {
+  max-width: 520px;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+  text-align: center;
+}
+.best-cook__wrapper {
+  padding-top: 40px;
+  display: flex;
+  gap: 0 30px;
+}
+
+.info-cook {
+  display: flex;
+  gap: 0 30px;
+  width: 605px;
+}
+.info-cook__title {
+  padding-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.info-cook__photo {
+  position: relative;
+}
+.info-cook__circule {
+  position: absolute;
+  z-index: -1;
+  top: 16px;
+  left: -16px;
+  height: 390px;
+  width: 241px;
+  border-radius: 4px 4px 4px 200px;
+  border: 1px solid var(--bakery-landing-14, #a18268);
+}
+
+.formats {
+  padding: 66px 0 48px;
+}
+.formats__title {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 84px;
+  text-align: center;
+}
+
+.formatsSwiper__container {
+  position: relative;
+  padding-bottom: 43px;
+}
+
+.bakery-card {
+  position: relative;
+  width: 349px;
+  height: 444px;
+}
+.bakery-card__img {
+  border-radius: 16px;
+}
+.bakery-card__gradient {
+  color: #faf4ea;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
+}
+.bakery-card__text {
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+}
+.bakery-card__title {
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.bakery-card p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.swiper-button-prev {
+  top: 46%;
+  left: 0;
+  width: 44px;
+}
+.swiper-button-prev::after {
+  content: none !important;
+}
+.swiper-button-next {
+  top: 46%;
+  right: 0;
+  width: 44px;
+}
+.swiper-button-next::after {
+  content: none !important;
+}
+
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper {
+  width: 1087px;
+}
