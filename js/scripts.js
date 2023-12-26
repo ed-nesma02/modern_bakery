@@ -26,3 +26,47 @@ const swiper = new Swiper('.formatsSwiper', {
     clickable: true,
   },
 });
+
+const open = document.querySelector('.header__btn');
+const modal = document.querySelector('.modal');
+const close = document.querySelector('.modal__close');
+const body = document.querySelector('body');
+const forms = document.querySelectorAll('.form');
+
+const openModal = () => {
+  modal.style.opacity = '1';
+  modal.style.visibility = 'visible';
+  body.style.overflowY = 'hidden';
+};
+
+const closeModal = (e) => {
+  if (
+    e === 'close' ||
+    e.target === modal ||
+    e.target.closest('.modal__close')
+  ) {
+    modal.style.opacity = '0';
+    body.style.overflowY = 'auto';
+    setTimeout(() => {
+      modal.style.visibility = 'hidden';
+    }, 300);
+  }
+};
+
+modal.addEventListener('click', closeModal);
+open.addEventListener('click', openModal);
+
+forms.forEach((form) => {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    console.log('formData: ', formData);
+  
+    for (const key of formData) {
+      console.log(key);
+    }
+  
+    closeModal("close");
+  });
+})
+

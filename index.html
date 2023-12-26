@@ -38,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__btn">Замовити дзвінок</a>
+        <button class="header__btn">Замовити дзвінок</button>
       </div>
     </header>
     <main class="main">
@@ -318,7 +318,7 @@
                 width="44"
                 height="44"
                 viewBox="0 0 44 44"
-                fill="none"
+                fill="curentColor"
               >
                 <g filter="url(#filter0_b_38_561)">
                   <circle
@@ -378,7 +378,7 @@
                 width="44"
                 height="44"
                 viewBox="0 0 44 44"
-                fill="none"
+                fill="curentColor"
               >
                 <g filter="url(#filter0_b_38_560)">
                   <circle
@@ -400,7 +400,7 @@
                 </g>
                 <path
                   d="M13.531 22.7071C13.1405 22.3166 13.1405 21.6834 13.531 21.2929L19.8949 14.9289C20.2855 14.5384 20.9186 14.5384 21.3092 14.9289C21.6997 15.3195 21.6997 15.9526 21.3092 16.3431L15.6523 22L21.3092 27.6569C21.6997 28.0474 21.6997 28.6805 21.3092 29.0711C20.9186 29.4616 20.2855 29.4616 19.8949 29.0711L13.531 22.7071ZM31 23L14.2381 23L14.2381 21L31 21L31 23Z"
-                  fill="#31261A"
+                  fill="curentColor"
                 />
                 <defs>
                   <filter
@@ -443,19 +443,19 @@
             <p class="contacts__subtitle">
               Заповни форму, щоб ми звʼязались з тобою!
             </p>
-            <form action="" class="contacts__form">
-              <label for="" class="contacts__label">
-                <input type="text" class="contacts__input" placeholder="Ім'я" id="name">
+            <form class="contacts__form form form">
+              <label for="" class="contacts__label form__label">
+                <input type="text" class="contacts__input form__input" placeholder="Ім'я" name="name" required>
               </label>
-              <label for="" class="contacts__label">
-                <input type="text" class="contacts__input" placeholder="Телефон" id="surname">
+              <label for="" class="contacts__label form__label">
+                <input type="text" class="contacts__input form__input" placeholder="Телефон" name="surname" required>
               </label>
-              <label for="" class="contacts__label">
-                <input type="text" class="contacts__input" placeholder="Електронна пошта" id="email">
+              <label for="" class="contacts__label form__label">
+                <input type="text" class="contacts__input form__input" placeholder="Електронна пошта" name="email" required>
               </label>
-              <button class="contacts__btn" type="submit">Замовити дзвінок</button>
-              <p class="contacts__policy">Натискаючи на кнопку я погоджуюсь
-                <a href="#" class="contacts__link">з <br>політикою конфіденційності</a>
+              <button class="contacts__btn form__btn" type="submit">Замовити дзвінок</button>
+              <p class="contacts__policy form__policy">Натискаючи на кнопку я погоджуюсь<br>
+                <a href="#" class="contacts__link form__link">з політикою конфіденційності</a>
               </p>
             </form>
           </div>
@@ -471,27 +471,27 @@
         </a>
         <ul class="footer__nav-List">
           <li class="footer__nav-Item">
-            <a href="" class="footer__link">Франшиза</a>
+            <a href="#cooks" class="footer__link">Франшиза</a>
           </li>
           <li class="footer__nav-Item">
-            <a href="" class="footer__link">Наші традиції</a>
+            <a href="#traditional" class="footer__link">Наші традиції</a>
           </li>
           <li class="footer__nav-Item">
-            <a href="" class="footer__link">Формати</a>
+            <a href="#format" class="footer__link">Формати</a>
           </li>
           <li class="footer__nav-Item">
-            <a href="" class="footer__link">Контакти</a>
+            <a href="#contacts" class="footer__link">Контакти</a>
           </li>
         </ul>
         <ul class="footer__contacts">
           <li class="footer__contact">
-            <a href="" class="footer__link">+ 38 (096) 000 00 07</a>
+            <a href="tel:+38(096)0000007" class="footer__link">+ 38 (096) 000 00 07</a>
           </li>
           <li class="footer__contact">
-            <a href="" class="footer__link">shopbakery@gmail.com</a>
+            <a href="mailto:shopbakery@gmail.com" class="footer__link">shopbakery@gmail.com</a>
           </li>
           <li class="footer__contact">
-            <a href="" class="footer__link">Україна, м. Київ, <br> вул. Січових Стрільців 54</a>
+            <a href="https://maps.app.goo.gl/381QNM5BJ6SLtkrM7" class="footer__link">Україна, м. Київ, <br> вул. Січових Стрільців 54</a>
           </li>
           <li class="footer__contact contact">
             <ul class="contact__icons">
@@ -515,6 +515,35 @@
       </div>
     </footer>
 
-    <div class="modal"></div>
+    <div class="modal">
+      <div class="modal__main">
+        <p class="modal__title">Замовити дзвінок</p>
+        <p class="modal__subtitle">
+          Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+        </p>
+        <form class="modal__form form form">
+          <label class="modal__label form__label">
+            <input type="text" class="modal__input form__input" placeholder="Ім'я" name="name" required>
+          </label>
+          <label class="modal__label form__label">
+            <input type="text" class="modal__input form__input" placeholder="Телефон" name="surname" required>
+          </label>
+          <label class="modal__label form__label">
+            <input type="text" class="modal__input form__input" placeholder="Електронна пошта" name="email" required>
+          </label>
+          <button class="modal__btn form__btn" type="submit">Замовити дзвінок</button>
+          <p class="modal__policy form__policy">Натискаючи на кнопку я погоджуюсь<br>
+            <a href="#" class="modal__link form__link">з політикою конфіденційності</a>
+          </p>
+        </form>
+        <button class="modal__close">
+          <svg class="modal__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8L16 16L24 8" stroke="curentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 24L16 16L24 24" stroke="curentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg> 
+        </button>
+        <img src="img/bread.png" alt="bread" class="modal__img">
+      </div>
+    </div>
   </body>
 </html>
