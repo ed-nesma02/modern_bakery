@@ -8,10 +8,18 @@ const swiper = new Swiper('.formatsSwiper', {
     enabled: true,
   },
   breakpoints: {
-    769: {
+    1300: {
       slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 20,
+    },
+    769: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
   },
   scrollbar: {
@@ -61,11 +69,7 @@ forms.forEach((form) => {
     e.preventDefault();
     const formData = new FormData(form);
     console.log('formData: ', formData);
-  
-    for (const key of formData) {
-      console.log(key);
-    }
-  
+    form.reset()
     closeModal("close");
   });
 })

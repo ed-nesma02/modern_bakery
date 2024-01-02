@@ -9,12 +9,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
     <script
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
       defer
     ></script>
+  </head>
+  <body>
+    
     <script src="js/scripts.js" defer></script>
     <header class="header">
       <div class="header__container container">
@@ -22,6 +23,11 @@
           shop
           <span class="logo__span">bakery</span>
         </a>
+        <button class="burger header__burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
         <nav class="header__nav nav">
           <ul class="nav__items">
             <li class="nav__item">
@@ -443,7 +449,7 @@
             <p class="contacts__subtitle">
               Заповни форму, щоб ми звʼязались з тобою!
             </p>
-            <form class="contacts__form form form">
+            <form class="contacts__form form">
               <label for="" class="contacts__label form__label">
                 <input type="text" class="contacts__input form__input" placeholder="Ім'я" name="name" required>
               </label>
@@ -464,7 +470,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container container">
+      <div class="container footer__container">
         <a class="footer__logo logo" href="/">
           shop <br>
           <span class="logo__span">bakery</span>
@@ -521,7 +527,7 @@
         <p class="modal__subtitle">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form class="modal__form form form">
+        <form class="modal__form form">
           <label class="modal__label form__label">
             <input type="text" class="modal__input form__input" placeholder="Ім'я" name="name" required>
           </label>
