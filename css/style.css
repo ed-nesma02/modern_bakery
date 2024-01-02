@@ -177,6 +177,7 @@ h6 {
   padding-top: 32px;
   left: 0;
   right: 0;
+  transition: all 0.3s ease-in-out;
 }
 .header__container {
   display: flex;
@@ -202,6 +203,7 @@ h6 {
 
 .burger {
   display: none;
+  position: relative;
 }
 
 .hero {
@@ -746,16 +748,33 @@ h6 {
   .nav__items {
     flex-direction: column;
   }
+  .nav__link {
+    color: #31261A;
+  }
   .nav_active {
     display: block;
   }
+  .header_active {
+    height: 1000px;
+    background-color: #faf4ea;
+  }
+  .header_active .logo {
+    color: #31261A;
+  }
+  .header_active .logo span {
+    font-weight: 600 !important;
+  }
   .header__btn {
+    display: none;
     width: 203px;
     bottom: -246px;
     left: 50%;
     transform: translate(-50%);
     padding: 10px 24px;
     position: absolute;
+  }
+  .header__btn_active {
+    display: block;
   }
   .burger {
     grid-area: burger;
@@ -773,6 +792,7 @@ h6 {
     height: 2px;
     border-radius: 5px;
     background-color: #faf4ea;
+    transition: all 0.3s ease-in-out;
   }
   .burger span:nth-child(1) {
     width: 15px;
@@ -782,6 +802,34 @@ h6 {
   }
   .burger span:nth-child(3) {
     width: 10px;
+  }
+  .burger span:nth-child(4) {
+    width: 0;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .burger span:nth-child(5) {
+    width: 0;
+    position: absolute;
+    transform: rotate(135deg);
+  }
+  .burger_active span {
+    background-color: #31261A;
+  }
+  .burger_active span:nth-child(1) {
+    width: 0;
+  }
+  .burger_active span:nth-child(2) {
+    width: 0;
+  }
+  .burger_active span:nth-child(3) {
+    width: 0;
+  }
+  .burger_active span:nth-child(4) {
+    width: 24px;
+  }
+  .burger_active span:nth-child(5) {
+    width: 24px;
   }
   .hero {
     height: 378px;
@@ -887,6 +935,7 @@ h6 {
   }
   .contacts__container {
     flex-direction: column;
+    align-items: center;
   }
   .contacts__title {
     text-align: center;
@@ -930,5 +979,24 @@ h6 {
   .footer__policys {
     grid-column: 1;
     grid-row: 4;
+  }
+  .modal__main {
+    padding: 40px 30px 60px;
+    border-radius: 16px;
+  }
+  .modal__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .modal__subtitle {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+  .modal__close {
+    top: 10px;
+    right: 10px;
+  }
+  .modal__img {
+    display: none;
   }
 }

@@ -69,8 +69,28 @@ forms.forEach((form) => {
     e.preventDefault();
     const formData = new FormData(form);
     console.log('formData: ', formData);
-    form.reset()
-    closeModal("close");
+    form.reset();
+    closeModal('close');
   });
-})
+});
 
+const burger = document.querySelector('.burger');
+const navigation = document.querySelector('.nav');
+const logo = document.querySelector('.logo');
+const header = document.querySelector('.header');
+
+const burgerControl = () => {
+  burger.classList.toggle('burger_active');
+  navigation.classList.toggle('nav_active');
+  logo.classList.toggle('logo_active');
+  header.classList.toggle('header_active');
+  open.classList.toggle('header__btn_active');
+  if (body.style.overflowY === 'hidden') {
+    body.style.overflowY = 'auto';
+  } else {
+    body.style.overflowY = 'hidden';
+  }
+};
+
+burger.addEventListener('click', burgerControl);
+navigation.addEventListener('click', burgerControl);
